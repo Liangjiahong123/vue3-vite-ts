@@ -1,0 +1,32 @@
+import { fileURLToPath, URL } from "node:url";
+import legacyPlugin from "@vitejs/plugin-legacy";
+import { createHtmlPlugin } from "vite-plugin-html";
+import Components from "unplugin-vue-components/vite";
+import { ElementPlusResolver } from "unplugin-vue-components/resolvers";
+import AutoImport from "unplugin-auto-import/vite";
+import { defineConfig } from "vite";
+import vue from "@vitejs/plugin-vue";
+
+// https://vitejs.dev/config/
+export default defineConfig({
+  plugins: [
+    vue(),
+    legacyPlugin({ targets: ["defaults", "not IE 11"] }),
+    createHtmlPlugin({ minify: true }),
+    Components({
+      resolvers: [ElementPlusResolver()]
+    }),
+    AutoImport({
+      resolvers: [ElementPlusResolver()],
+      imports: ["vue", "vue-router"],
+      eslintrc: { enabled: true }
+    })
+  ],
+
+  resolve: {
+    alias: {
+      "@": fileURLToPath(new URL("./src", import.meta.url)),
+      "@img": fileURLToPath(new URL("./src/assets/img", import.meta.url))
+    }
+  }
+});
