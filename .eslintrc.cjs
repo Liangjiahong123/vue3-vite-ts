@@ -34,5 +34,5 @@ module.exports = {
     "no-new": "off",
     "eol-last": "off",
     "no-shadow": "off"
-  },
+  }
 };
