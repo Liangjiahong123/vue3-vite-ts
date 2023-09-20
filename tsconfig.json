@@ -9,7 +9,7 @@
     "jsx": "preserve", // 指定jsx代码用于的开发环境:
     "importHelpers": true, // 引入tslib里的复制工具函数,
     "resolveJsonModule": true, // 解析JSON模块
-    "noUnusedLocals": true, // 检查未使用的本地变量
+    "noUnusedLocals": false, // 检查未使用的本地变量
     "noUnusedParameters": true, // 检查未使用的函数参数
     "experimentalDecorators": true, // 开启装饰器支持
     "noImplicitAny": false, // 声明变量时可以不进行明确的类型注解
