@@ -31,9 +31,18 @@ module.exports = {
     "vue/script-setup-uses-vars": "warn", // 防止 <template> 中使用的 <script setup> 变量被标记为未用变量
     "vue/multi-word-component-names": "off", // 关闭Vue组件名称必须使用多个单词的规则
     "vue/custom-event-name-casing": "off", // 关闭自定义事件名称必须使用大写字母的规则
-
+    "vue/attributes-order": "off", // 不强制组件属性的排序
+    "vue/v-on-event-hyphenation": "off", // 不强制在自定义组件上使用连字符形式的事件名称
+    "vue/one-component-per-file": "off", // 不限制每个文件只能有一个组件
+    "vue/max-attributes-per-line": "off", // 不限制组件每行最多的属性数量
+    "vue/singleline-html-element-content-newline": "off", // 在单行元素中不使用换行符
+    "vue/attribute-hyphenation": "off", // 不强制在自定义组件上使用连字符形式的属性名称
+    "vue/require-default-prop": "off", // 不强制prop一定要使用默认值
     "@typescript-eslint/no-unused-vars": ["warn", { vars: "all", args: "none" }],
-
+    "@typescript-eslint/no-use-before-define": "off", // 允许变量在定义前使用
+    "@typescript-eslint/no-explicit-any": "off", // 允许使用any
+    "@typescript-eslint/no-var-requires": "off", // 允许使用require语句
+    "@typescript-eslint/no-empty-function": "off", // 允许使用空函数
     "no-return-assign": "off", // 关闭函数中允许使用赋值表达式的规则
     "no-param-reassign": "off", // 关闭函数参数不允许重新赋值的规则
     "guard-for-in": "off", // 关闭for-in循环中需要使用hasOwnProperty()的规则
