@@ -19,12 +19,6 @@ dependencies:
     version: 4.2.4(vue@3.3.4)
 
 devDependencies:
-  '@babel/core':
-    specifier: ^7.22.17
-    version: 7.22.17
-  '@babel/preset-env':
-    specifier: ^7.22.15
-    version: 7.22.15(@babel/core@7.22.17)
   '@rushstack/eslint-patch':
     specifier: ^1.3.2
     version: 1.3.3
@@ -39,7 +33,7 @@ devDependencies:
     version: 6.7.2(eslint@8.49.0)(typescript@5.1.6)
   '@vitejs/plugin-legacy':
     specifier: ^4.1.1
-    version: 4.1.1(terser@5.19.4)(vite@4.4.9)
+    version: 4.1.1(terser@5.20.0)(vite@4.4.9)
   '@vitejs/plugin-vue':
     specifier: ^4.3.1
     version: 4.3.4(vite@4.4.9)(vue@3.3.4)
@@ -67,9 +61,6 @@ devDependencies:
   npm-run-all:
     specifier: ^4.1.5
     version: 4.1.5
-  postcss:
-    specifier: ^8.4.30
-    version: 8.4.30
   postcss-html:
     specifier: ^1.5.0
     version: 1.5.0
@@ -100,6 +91,9 @@ devDependencies:
   stylelint-order:
     specifier: ^6.0.3
     version: 6.0.3(stylelint@15.10.3)
+  terser:
+    specifier: ^5.20.0
+    version: 5.20.0
   typescript:
     specifier: ~5.1.6
     version: 5.1.6
@@ -111,7 +105,7 @@ devDependencies:
     version: 0.25.2(vue@3.3.4)
   vite:
     specifier: ^4.4.9
-    version: 4.4.9(@types/node@18.17.15)(less@4.2.0)(terser@5.19.4)
+    version: 4.4.9(@types/node@18.17.15)(less@4.2.0)(terser@5.20.0)
   vite-plugin-html:
     specifier: ^3.2.0
     version: 3.2.0(vite@4.4.9)
@@ -1896,7 +1890,7 @@ packages:
       eslint-visitor-keys: 3.4.3
     dev: true
 
-  /@vitejs/plugin-legacy@4.1.1(terser@5.19.4)(vite@4.4.9):
+  /@vitejs/plugin-legacy@4.1.1(terser@5.20.0)(vite@4.4.9):
     resolution: {integrity: sha512-um3gbVouD2Q/g19C0qpDfHwveXDCAHzs8OC3e9g6aXpKoD1H14himgs7wkMnhAynBJy7QqUoZNAXDuqN8zLR2g==}
     engines: {node: ^14.18.0 || >=16.0.0}
     peerDependencies:
@@ -1910,8 +1904,8 @@ packages:
       magic-string: 0.30.3
       regenerator-runtime: 0.13.11
       systemjs: 6.14.2
-      terser: 5.19.4
-      vite: 4.4.9(@types/node@18.17.15)(less@4.2.0)(terser@5.19.4)
+      terser: 5.20.0
+      vite: 4.4.9(@types/node@18.17.15)(less@4.2.0)(terser@5.20.0)
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -1923,7 +1917,7 @@ packages:
       vite: ^4.0.0
       vue: ^3.2.25
     dependencies:
-      vite: 4.4.9(@types/node@18.17.15)(less@4.2.0)(terser@5.19.4)
+      vite: 4.4.9(@types/node@18.17.15)(less@4.2.0)(terser@5.20.0)
       vue: 3.3.4
     dev: true
 
@@ -3354,7 +3348,7 @@ packages:
       he: 1.2.0
       param-case: 3.0.4
       relateurl: 0.2.7
-      terser: 5.19.4
+      terser: 5.20.0
     dev: true
 
   /html-tags@3.3.1:
@@ -5010,8 +5004,8 @@ packages:
       strip-ansi: 6.0.1
     dev: true
 
-  /terser@5.19.4:
-    resolution: {integrity: sha512-6p1DjHeuluwxDXcuT9VR8p64klWJKo1ILiy19s6C9+0Bh2+NWTX6nD9EPppiER4ICkHDVB1RkVpin/YW2nQn/g==}
+  /terser@5.20.0:
+    resolution: {integrity: sha512-e56ETryaQDyebBwJIWYB2TT6f2EZ0fL0sW/JRXNMN26zZdKi2u/E/5my5lG6jNxym6qsrVXfFRmOdV42zlAgLQ==}
     engines: {node: '>=10'}
     hasBin: true
     dependencies:
@@ -5304,10 +5298,10 @@ packages:
       html-minifier-terser: 6.1.0
       node-html-parser: 5.4.2
       pathe: 0.2.0
-      vite: 4.4.9(@types/node@18.17.15)(less@4.2.0)(terser@5.19.4)
+      vite: 4.4.9(@types/node@18.17.15)(less@4.2.0)(terser@5.20.0)
     dev: true
 
-  /vite@4.4.9(@types/node@18.17.15)(less@4.2.0)(terser@5.19.4):
+  /vite@4.4.9(@types/node@18.17.15)(less@4.2.0)(terser@5.20.0):
     resolution: {integrity: sha512-2mbUn2LlUmNASWwSCNSJ/EG2HuSRTnVNaydp6vMCm5VIqJsjMfbIWtbH2kDuwUVW5mMUKKZvGPX/rqeqVvv1XA==}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
@@ -5340,7 +5334,7 @@ packages:
       less: 4.2.0
       postcss: 8.4.30
       rollup: 3.29.1
-      terser: 5.19.4
+      terser: 5.20.0
     optionalDependencies:
       fsevents: 2.3.3
     dev: true
