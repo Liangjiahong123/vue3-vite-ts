@@ -30,6 +30,7 @@ td {
 
   /* -webkit-tap-highlight-color:transparent; */
 }
+
 html {
   overflow: -moz-scrollbars;
   overflow-y: auto;
@@ -52,6 +53,7 @@ s,a {
 a {
   color: inherit;
 }
+
 ul,
 ol {
   list-style: none;
@@ -79,10 +81,12 @@ textarea {
   font: inherit;
   resize: none;
 }
+
 table {
   border-spacing: 0;
   border-collapse: collapse;
 }
+
 ::-webkit-scrollbar {
   position: fixed;
   top: 0;
@@ -90,15 +94,18 @@ table {
   width: 6px;
   height: 6px;
 }
+
 ::-webkit-scrollbar-track {
   background-color: transparent;
   border-radius: 0;
 }
+
 ::-webkit-scrollbar-thumb {
   background-color: rgb(144 147 153 / 0.3);
   border-radius: 3px;
   cursor: pointer;
 }
+
 ::-webkit-scrollbar-thumb:hover {
   background-color: rgb(144 147 153 / 0.5);
 }

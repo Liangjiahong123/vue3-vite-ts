@@ -1,12 +1,12 @@
 import "./assets/main.css";
+import "normalize.css";
+import "./styles/reset.css";
+import "./styles/tailwind.css";
 
 import { createApp } from "vue";
 import { createPinia } from "pinia";
 import router from "./router";
 import App from "./App.vue";
-
-import "normalize.css";
-import "./assets/css/reset.css";
 
 const app = createApp(App);
 

@@ -11,7 +11,9 @@ import TheWelcome from "./components/TheWelcome.vue";
       <HelloWorld msg="You did it!" />
     </div>
 
-    <div>message content</div>
+    <div class="text-3xl font-bold underline flex-center">message content</div>
+    <el-button>123</el-button>
+    <el-form></el-form>
   </header>
 
   <main>
