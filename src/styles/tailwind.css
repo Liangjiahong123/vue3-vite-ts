@@ -4,6 +4,15 @@
 
 @layer utilities {
   .flex-center {
-    @apply flex items-center justify-center
+    @apply flex items-center justify-center;
+  }
+  .al-center {
+    @apply flex items-center;
+  }
+  .flex-column {
+    @apply flex flex-col;
+  }
+  .pointer {
+    @apply cursor-pointer;
   }
 }

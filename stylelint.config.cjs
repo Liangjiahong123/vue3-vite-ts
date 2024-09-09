@@ -32,7 +32,7 @@ module.exports = {
     "at-rule-no-unknown": [
       true,
       {
-        ignoreAtRules: ["tailwind", "function", "if", "else", "else-if", "each", "include", "mixin"]
+        ignoreAtRules: ["tailwind", "function", "if", "else", "else-if", "each", "apply"]
       }
     ],
     // 强制要求 @ 规则之前有空行
@@ -41,7 +41,7 @@ module.exports = {
       {
         except: ["blockless-after-same-name-blockless", "first-nested"],
         ignore: ["after-comment"],
-        ignoreAtRules: ["else", "else-if"]
+        ignoreAtRules: ["else", "else-if", "tailwind", "apply"]
       }
     ],
     // 指定书写样式的排序

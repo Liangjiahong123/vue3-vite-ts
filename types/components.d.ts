@@ -7,17 +7,30 @@ export {}
 
 declare module 'vue' {
   export interface GlobalComponents {
+    Dropdown: typeof import('./../src/components/common/Dropdown/index.vue')['default']
+    ElAside: typeof import('element-plus/es')['ElAside']
+    ElAvatar: typeof import('element-plus/es')['ElAvatar']
     ElButton: typeof import('element-plus/es')['ElButton']
-    ElForm: typeof import('element-plus/es')['ElForm']
-    HelloWorld: typeof import('./../src/components/HelloWorld.vue')['default']
-    IconCommunity: typeof import('./../src/components/icons/IconCommunity.vue')['default']
-    IconDocumentation: typeof import('./../src/components/icons/IconDocumentation.vue')['default']
-    IconEcosystem: typeof import('./../src/components/icons/IconEcosystem.vue')['default']
-    IconSupport: typeof import('./../src/components/icons/IconSupport.vue')['default']
-    IconTooling: typeof import('./../src/components/icons/IconTooling.vue')['default']
+    ElConfigProvider: typeof import('element-plus/es')['ElConfigProvider']
+    ElDivider: typeof import('element-plus/es')['ElDivider']
+    ElDropdown: typeof import('element-plus/es')['ElDropdown']
+    ElDropdownItem: typeof import('element-plus/es')['ElDropdownItem']
+    ElDropdownMenu: typeof import('element-plus/es')['ElDropdownMenu']
+    ElHeader: typeof import('element-plus/es')['ElHeader']
+    ElIcon: typeof import('element-plus/es')['ElIcon']
+    ElImage: typeof import('element-plus/es')['ElImage']
+    ElMain: typeof import('element-plus/es')['ElMain']
+    ElMenu: typeof import('element-plus/es')['ElMenu']
+    ElMenuItem: typeof import('element-plus/es')['ElMenuItem']
+    ElSubMenu: typeof import('element-plus/es')['ElSubMenu']
+    ElTooltip: typeof import('element-plus/es')['ElTooltip']
+    Icon: typeof import('./../src/components/common/IconView/Icon.vue')['default']
+    IconView: typeof import('./../src/components/common/IconView/index.vue')['default']
+    RouteLayout: typeof import('./../src/components/common/Layout/RouteLayout.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
-    TheWelcome: typeof import('./../src/components/TheWelcome.vue')['default']
-    WelcomeItem: typeof import('./../src/components/WelcomeItem.vue')['default']
+  }
+  export interface ComponentCustomProperties {
+    vLoading: typeof import('element-plus/es')['ElLoadingDirective']
   }
 }
